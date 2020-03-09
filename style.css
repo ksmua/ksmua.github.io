@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  border-style: none;
+}
+ul li {
+  list-style: none;
+}
+.main {
+  display: block;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-image: url(/img/bg.jpg);
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+#navbar{
+  background-color: rgba(60, 30, 30, 0.4);
+  font-family: 'Changa', sans-serif;
+  letter-spacing: 3px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#navbar:hover{
+  background-color: rgba(60, 30, 30, 0.9);
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#navbar ul li {
+  line-height: 7vh;
+  color: steelblue;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+#navbar ul li:last-child{
+  margin-right: 0;
+}
+#navbar a:hover {
+  text-shadow: 0 0 15px red;
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Black Ops One', cursive;
+  letter-spacing: 10px;
+  color: darkturquoise;
+  padding-top: 8vh;
+}
+h1 #subheader {
+  display: block;
+  font-size: .7em;
+  font-family: 'Audiowide', cursive;
+  color: steelblue;
+  position: relative;
+}
+h1 #subheader::after{
+  content: '';
+  border-bottom: 1px solid rgba(70, 130, 180, 0.1);
+  box-shadow: 0 0 10px rgb(70, 130, 180);
+  display: block;
+  width: 50%;
+  margin: 15px auto 0;
+}
+h1:hover > #subheader::after{
+  border-bottom: 1px solid rgba(70, 130, 180, 0.2);
+  box-shadow: 0 0 25px rgb(70, 130, 180), 0 0 10px  rgb(200, 225, 250);
+  transition: .6s;
+}
+h2, h3{
+  font-family: 'Changa', sans-serif;
+  letter-spacing: 4px;
+}
+main{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: rgb(10, 20, 20);
+}
+h3{
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 3vh;
+  color: rgb(80, 160, 180);
+}
+.projects-grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project-tile {
+  width: 500px;
+  height: 680px;
+  background-color: dimgray;
+  position: relative;
+  margin-right: 2rem;
+  border: 1px solid darkslategrey;
+  border-radius: 3px;
+  margin-top: 2vh;
+  overflow: hidden;
+}
+.project-tile img{
+  width: 500px;
+  height: 600px;
+}
+.project-tile figcaption{
+  width: 100%;
+  background-color: rgb(20, 20, 60);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.5em;
+  font-family: 'Changa', sans-serif;
+  font-weight: 100;
+  color: rgb(170, 140, 170);
+}
+#more-projects{
+  padding-top:4vh ;
+  text-align: center;
+}
+#more-btn{
+  color:rgb(170, 140, 170);
+  border: 1px solid rgb(170, 140, 170);
+  padding: 1vh 4vh;
+  font-size: 1.5em;
+  font-family: 'Marmelad', sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+}
+#more-btn:hover{
+  background-color: rgb(20, 20, 60);
+  transition: .5s;
+}
+.unactive{
+  display: none;
+}
+
+footer{
+  background-color: rgb(15, 15, 15);
+  padding: 5vh 0;
+  color: gray;
+}
+footer h2{
+  text-align: center;
+  font-size: 2.5em;
+}
+#contacts{
+  display: flex;
+  justify-content: center;
+}
+#contacts ul{
+  margin-top: 2vh;
+  margin-bottom: 2vh;;
+ }
+#contacts li{
+  font-size: 2em;
+  line-height: 1.25;
+  margin-bottom: .2em;
+  font-family: 'Marmelad', sans-serif;
+}
+#contacts li:hover{
+  color: rgb(70, 130, 180);
+}
+#contacts li img{
+  margin-right: .5em;
+  margin-bottom: -0.25em;
+  width: 1.2em;
+}
+footer hr{
+  border-color: gray;
+}
+
+@media only screen and (min-width: 768px){
+  h1{
+    font-size: 4em;
+  }
+  h1 #subheader{
+    font-size: .8em;
+  }
+  footer h2, h3 {
+    font-size: 3em;
+  }
+  .project-tile{
+    height: 700px;
+  }
+  .project-tile figcaption{
+    font-size: 2em;
+    line-height: 100px;
+  }
+  #contacts li{
+    font-size: 1.2em;
+    display: inline-block;
+    margin-left: 1em;
+  }
+  #contacts li:first-child{
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  #contacts li{
+    font-size: 1.5em;
+  }
+  #navbar ul li {
+    font-size: 2em;
+  }
+}

@@ -64,12 +64,12 @@ ul li {
 }
 h1 {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
   font-family: 'Black Ops One', cursive;
   letter-spacing: 10px;
   color: darkturquoise;
-  padding-top: 8vh;
+  padding: 8vh 1vh;
 }
 h1 #subheader {
   display: block;
@@ -77,6 +77,9 @@ h1 #subheader {
   font-family: 'Audiowide', cursive;
   color: steelblue;
   position: relative;
+  /* mobile-size */
+  letter-spacing: 5px;
+  padding-top: 2vh;
 }
 h1 #subheader::after{
   content: '';
@@ -99,10 +102,11 @@ h2, h3{
 main{
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background-color: rgb(10, 20, 20);
+  background-color: rgb(6, 15, 15);
 }
 h3{
   font-size: 2.5em;
+  line-height: 1.3em;
   text-align: center;
   margin-bottom: 3vh;
   color: rgb(80, 160, 180);
@@ -114,8 +118,8 @@ h3{
   flex-wrap: wrap;
 }
 .project-tile {
-  width: 500px;
-  height: 680px;
+  width: 300px;
+  height: 500px;
   background-color: dimgray;
   position: relative;
   margin-right: 2rem;
@@ -125,20 +129,24 @@ h3{
   overflow: hidden;
 }
 .project-tile img{
-  width: 500px;
-  height: 600px;
+  width: 300px;
+  height: 500px;
 }
 .project-tile figcaption{
   width: 100%;
-  background-color: rgb(20, 20, 60);
+  background-color: rgba(20, 20, 60, 0.8);
   position: absolute;
   bottom: 0;
   text-align: center;
-  line-height: 80px;
+  line-height: 1.2em;
+  min-height: 70px;
   font-size: 1.5em;
   font-family: 'Changa', sans-serif;
   font-weight: 100;
   color: rgb(170, 140, 170);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project-tile figcaption:hover{
   color: steelblue;
@@ -171,7 +179,9 @@ footer{
 }
 footer h2{
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
+  line-height: 1.3em;
+  padding: 0 1vh;
 }
 #contacts{
   display: flex;
@@ -182,7 +192,7 @@ footer h2{
   margin-bottom: 2vh;;
  }
 #contacts li{
-  font-size: 2em;
+  font-size: 1.6em;
   line-height: 1.25;
   margin-bottom: .2em;
   font-family: 'Marmelad', sans-serif;
@@ -204,6 +214,27 @@ footer hr{
   text-align: end;
 }
 
+@media only screen and (min-width: 600px){
+  h1{
+    font-size: 3em;
+  }
+  h1 #subheader {
+    font-size: .7em;
+    /* mobile-size */
+    letter-spacing: 10px;
+    /* padding-top: 2vh; */
+  }
+  .project-tile, .project-tile img{
+    width: 400px;
+    height: 550px;
+  }
+  footer h2{
+    font-size: 2.5em;
+    line-height: 1.5em;
+  }
+  #contacts li{
+  font-size: 2em;
+}
 @media only screen and (min-width: 768px){
   h1{
     font-size: 4em;
@@ -214,12 +245,13 @@ footer hr{
   footer h2, h3 {
     font-size: 3em;
   }
-  .project-tile{
-    height: 700px;
+  .project-tile, .project-tile img{
+    width: 450px;
+    height: 600px;
   }
   .project-tile figcaption{
     font-size: 2em;
-    line-height: 100px;
+    /* line-height: 100px; */
   }
   #contacts li{
     font-size: 1.2em;

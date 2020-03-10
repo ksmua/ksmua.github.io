@@ -1,0 +1,733 @@
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box
+}
+
+a
+{
+	color:inherit;
+	text-decoration:none
+}
+
+ul,li
+{
+	list-style:none
+}
+
+body
+{
+	background-color:#000;
+	color:#a9a9a9
+}
+
+.wrapper
+{
+	width:96%;
+	margin:0 auto;
+	position:relative
+}
+
+#header
+{
+	position:relative;
+	width:100%;
+	height:50vw;
+	background-image:url(../img/header_bkg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	box-shadow:inset 0 180px 80px 0 rgba(0,0,0,0.8)
+}
+
+nav
+{
+	position:fixed;
+	z-index:100;
+	width:100%;
+	background-color:rgba(0,0,0,0.8);
+	padding-top:5px
+}
+
+.nav
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center
+}
+
+.logo
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:end;
+	height:60px
+}
+
+.logo img
+{
+	height:60px;
+	width:60px
+}
+
+.logo h1
+{
+	text-transform:uppercase;
+	font-family:'Indie Flower',cursive;
+	vertical-align:middle;
+	line-height:30px
+}
+
+.logo-str
+{
+	display:block
+}
+
+.logo-red
+{
+	color:#be0000
+}
+
+.menu
+{
+	font-family:'Kalam',cursive;
+	justify-content:flex-end;
+	margin:0
+}
+
+.menu li
+{
+	line-height:60px;
+	margin:0 10px;
+	position:relative
+}
+
+.menu a
+{
+	cursor:pointer;
+	display:block;
+	font-size:20px
+}
+
+.menu a:hover,.menu a:active
+{
+	color:#be0000;
+	transition:.5s
+}
+
+.menu-checkbox
+{
+	line-height:60px;
+	width:60px;
+	cursor:pointer
+}
+
+#menu-checkbox,.menu-checkbox
+{
+	display:none
+}
+
+#opened
+{
+	display:none
+}
+
+h2,h3,h4
+{
+	font-size:30px;
+	width:90%;
+	margin:0 auto
+}
+
+h2
+{
+	position:absolute;
+	top:40%;
+	text-align:center;
+	display:block;
+	font-family:'Neucha',cursive;
+	font-weight:400;
+	text-shadow:2px 2px 8px #000;
+	width:100%;
+	letter-spacing:4px
+}
+
+.list
+{
+	color:rgba(255,255,150,0.5);
+	padding:40px 40px 40px 60px;
+	font-family:'Dosis',sans-serif;
+	font-size:30px
+}
+
+.sad
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	padding-top:80px
+}
+
+.sad img
+{
+	width:90%;
+	max-width:450px;
+	margin:0 auto
+}
+
+.list li
+{
+	margin-bottom:30px
+}
+
+.smile
+{
+	background-image:url(../img/board.jpg)
+}
+
+.humor
+{
+	margin-top:40px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	padding-bottom:30px;
+	min-height:400px
+}
+
+.humor img
+{
+	height:200px;
+	width:80%
+}
+
+.humor .list
+{
+	color:#a9a9a9;
+	min-width:400px
+}
+
+.about-us
+{
+	margin-top:30px;
+	padding:15px;
+	background-color:#141414
+}
+
+.about-us p
+{
+	font-family:'Play',sans-serif;
+	font-size:20px;
+	padding-bottom:15px;
+	text-indent:20px
+}
+
+.swiper-container
+{
+	width:450px;
+	height:300px;
+	margin:10px 0 0
+}
+
+.services
+{
+	padding-top:30px
+}
+
+.description
+{
+	display:flex;
+	flex-direction:column-reverse;
+	justify-content:center;
+	align-items:center;
+	min-height:400px;
+	padding-bottom:30px
+}
+
+.description .list li
+{
+	margin-bottom:10px
+}
+
+.swiper-slide img
+{
+	width:450px;
+	height:300px
+}
+
+h3
+{
+	font-family:'Neucha',cursive;
+	font-weight:400;
+	text-align:center;
+	padding-bottom:20px;
+	letter-spacing:4px
+}
+
+.service-list
+{
+	margin-top:0;
+	padding-top:0
+}
+
+.service-list li
+{
+	margin-top:10px
+}
+
+.service-list li:first-child
+{
+	margin-top:0
+}
+
+.reviews
+{
+	background-color:#141414;
+	padding:60px 0
+}
+
+.quotes
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap
+}
+
+h4
+{
+	font-family:'Neucha',cursive;
+	font-weight:400;
+	text-align:center;
+	text-shadow:2px 2px 8px #000;
+	letter-spacing:4px
+}
+
+.subhead
+{
+	font-family:'Dosis',cursive;
+	font-size:30px;
+	font-weight:400;
+	text-align:center;
+	padding:10px 0;
+	color:rgba(255,255,150,0.5)
+}
+
+.reviews p
+{
+	font-family:'Dosis',cursive;
+	font-size:20px;
+	font-weight:400;
+	max-width:90%;
+	padding:30px;
+	margin-top:30px;
+	background-color:#000;
+	display:block
+}
+
+.dark-wall
+{
+	padding:60px 0;
+	background-image:url(../img/dark_wall.jpg);
+	background-size:contain;
+	color:rgba(255,255,255,0.7)
+}
+
+.video video
+{
+	width:90%;
+	border:1px solid #a9a9a9;
+	outline:none;
+	margin:20px auto;
+	display:block
+}
+
+.backform
+{
+	padding:30px 0
+}
+
+.backform img
+{
+	padding-bottom:20px
+}
+
+#form
+{
+	display:block;
+	width:280px
+}
+
+#form label
+{
+	font-size:20px;
+	font-family:'Dosis';
+	display:block
+}
+
+#form input[type="text"],#form input[type="email"],#form textarea
+{
+	width:280px;
+	height:30px;
+	border:1px solid #a9a9a9;
+	background-color:#000;
+	color:darkgrey;
+	outline:none;
+	text-indent:5px;
+	margin-bottom:10px
+}
+
+#form textarea
+{
+	height:150px;
+	max-width:280px;
+	resize:none
+}
+
+#form input[type="submit"]
+{
+	display:block;
+	width:200px;
+	height:30px;
+	background-color:#282828;
+	border-color:#282828;
+	color:darkgrey;
+	outline:none;
+	margin:0 auto
+}
+
+.communication
+{
+	padding-top:30px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around
+}
+
+footer
+{
+	padding:20px 0;
+	background-image:url(../img/bg.jpg)
+}
+
+.footer
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center
+}
+
+.contacts
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center
+}
+
+.footer img
+{
+	height:100px
+}
+
+.contacts p
+{
+	font-size:25px;
+	padding:10px
+}
+
+.contacts ul img
+{
+	height:20px;
+	position:absolute;
+	top:0;
+	left:0
+}
+
+.contact-list
+{
+	font-family:'Kalam',cursive;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	margin:0 auto
+}
+
+.contact-list li
+{
+	margin-bottom:15px;
+	font-size:20px;
+	line-height:20px;
+	padding:0 0 0 20px;
+	position:relative
+}
+
+.contact-list li span
+{
+	display:block;
+	padding-left:10px
+}
+
+.socials
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center
+}
+
+.socials li img
+{
+	height:40px;
+	margin:10px
+}
+
+@media only screen and (max-width: 600px) {
+	.menu
+	{
+		width:100%
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.wrapper
+	{
+		width:92%
+	}
+	
+	h2,h3,h4
+	{
+		font-size:40px
+	}
+	
+	.humor img
+	{
+		height:200px;
+		width:70%
+	}
+	
+	.contacts
+	{
+		flex-direction:row;
+		justify-content:space-between
+	}
+	
+	.footer
+	{
+		flex-direction:row;
+		justify-content:space-between
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.menu-bar
+	{
+		width:50%
+	}
+	
+	.menu-bar label
+	{
+		z-index:999;
+		position:fixed;
+		top:0;
+		right:0
+	}
+	
+	.menu
+	{
+		display:block;
+		position:fixed;
+		width:50%;
+		top:60px;
+		right:-100%;
+		background-color:rgba(0,0,0,0.9);
+		transition:all .8s
+	}
+	
+	#menu-checkbox:checked ~ label #opened
+	{
+		display:block
+	}
+	
+	#menu-checkbox:checked ~ label #closed
+	{
+		display:none
+	}
+	
+	#menu-checkbox:checked ~ .menu
+	{
+		right:0
+	}
+	
+	.menu li
+	{
+		text-align:center
+	}
+	
+	.menu-checkbox
+	{
+		display:block
+	}
+	
+	#closed
+	{
+		display:block
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.wrapper
+	{
+		width:90%
+	}
+	
+	.menu-bar
+	{
+		width:100%
+	}
+	
+	.nav
+	{
+		flex-direction:row
+	}
+	
+	.menu
+	{
+		display:flex
+	}
+	
+	.sad
+	{
+		flex-direction:row
+	}
+	
+	.sad img
+	{
+		height:37%;
+		width:37%
+	}
+	
+	.humor
+	{
+		flex-direction:row;
+		justify-content:space-between
+	}
+	
+	.humor img
+	{
+		height:200px;
+		width:40%
+	}
+	
+	.list--left
+	{
+		padding-right:40px
+	}
+	
+	.list--right
+	{
+		padding-left:40px
+	}
+	
+	.description
+	{
+		flex-direction:row
+	}
+	
+	.quotes
+	{
+		justify-content:space-around;
+		flex-direction:row;
+		align-items:stretch
+	}
+	
+	.reviews p
+	{
+		width:45%
+	}
+	
+	.video video
+	{
+		width:70%
+	}
+	
+	.contact-list
+	{
+		flex-direction:row;
+		justify-content:start;
+		margin-left:-30px
+	}
+	
+	.contact-list li
+	{
+		margin-left:30px
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#header
+	{
+		height:500px
+	}
+	
+	.wrapper
+	{
+		width:86%
+	}
+	
+	.logo h1
+	{
+		font-size:30px
+	}
+	
+	.humor img
+	{
+		height:250px;
+		width:45%
+	}
+	
+	.video video
+	{
+		width:60%
+	}
+	
+	.about-us .container
+	{
+		display:flex;
+		flex-direction:row;
+		margin-left:-30px
+	}
+	
+	.about-us .container p
+	{
+		padding-left:30px
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.wrapper
+	{
+		width:80%
+	}
+	
+	.humor img
+	{
+		height:300px;
+		width:50%
+	}
+	
+	.video
+	{
+		display:flex;
+		flex-direction:row
+	}
+	
+	.video video
+	{
+		width:45%
+	}
+}

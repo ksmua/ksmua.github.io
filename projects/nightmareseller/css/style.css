@@ -335,7 +335,7 @@ h4
 	color:rgba(255,255,255,0.7)
 }
 
-.video video
+.video iframe
 {
 	width:90%;
 	border:1px solid #a9a9a9;
@@ -650,7 +650,7 @@ footer
 		width:45%
 	}
 	
-	.video video
+	.video iframe
 	{
 		width:70%
 	}
@@ -690,7 +690,7 @@ footer
 		width:45%
 	}
 	
-	.video video
+	.video iframe
 	{
 		width:60%
 	}
@@ -726,7 +726,7 @@ footer
 		flex-direction:row
 	}
 	
-	.video video
+	.video iframe
 	{
 		width:45%
 	}

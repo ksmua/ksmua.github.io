@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UkrGranPostach</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  
+</head>
+<body>
+  <header>
+    <div class="header wrapper">
+      <div class="logo">
+        <img src="img/stone-logo.svg" alt="logo" class="logo__img">
+        <div class="logo__text">
+          <h1 class="logo__name">ДП ПВКП «УкрГранПостач»</h1>
+          <h2 class="logo__slogan">Добування декоративного та будівельного каменю</h2>
+        </div>
+      </div>
+      <div class="contact__phone">
+        <a href="tel:+380971557635">8 097 155-76-35</a>
+        <span class="header__working-times">Пн - Пт з 9:00 до 18:00</span></div>
+      <button class="call-back-btn">Зворотний дзвінок</button>
+      <form class="callback-form hidden" id="clbForm">
+        <label for="your-number">Вкажіть свій номер телефону:</label>
+        <input type="tel" id="your-number" name="phone">
+        <label for="your-name">Вкажіть своє ім'я:</label>
+        <input type="text" id="your-name" name="user">
+        <div class="callback-form__buttons">
+          <input type="submit" value="Відправити" id="clbFormSendBtn" disabled>
+          <button id="clb-close-btn">Закрити</button>
+        </div>
+      </form>
+    </div>
+  </header>
+  <main>
+    <nav id="menu">
+      <label for="menu-checkbox" id="menu-btn">
+        <span></span>
+      </label>
+      <input type="checkbox" id="menu-checkbox">
+      <ul id="menu-list">
+        <li><a href="#">Головна</a></li>
+        <li><a href="#our-services">Послуги</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#about-us">Про компанію</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+    <section class="banner">
+      <img src="img/product.jpg" alt="background" id="banner__background">
+      <div class="banner__text">
+        <h2 class="banner__title">камінь, щебінь, відсів</h2>
+        <h3 class="banner__subtitle">
+          <span>порізка каменю для оздоблення,</span>
+          <span>бутовий камінь, щебінь та відсів різної фракції,</span>
+          <span>доставка сировини в межах області</span>
+        </h3>
+        <div class="banner__nav">
+          <a href="#" class="yellow-btn">Детальніше про доставку</a>
+          <span>або</span>
+          <a href="#" class="production-link">Переглянути продукцію</a>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <h3 class="section-header">завжди в наявності</h3>
+      <div class="products-cards wrapper">
+        <div class="product-card">
+          <img class="product-card__img" src="img/stones.png" alt="stone">
+          <header class="product-card__title card-title">Камінь бутовий</header>
+          <div class="product-card__description">
+            Відбірний бутовий камінь найчастіше використовується для влаштування фундаментів та камінних огорож, а також у ландшафтному дизайні.
+          </div>
+          <div class="product-card__price">від 230 грн./т</div>
+          <a href="#" class="product-card__detail yellow-btn">Детальніше</a>
+        </div>
+        <div class="product-card">
+          <img class="product-card__img" src="img/scheben.png" alt="stone">
+          <header class="product-card__title card-title">Щебінь гранітний</header>
+          <div class="product-card__description">
+            Гранітний щебінь широко використовується в будівництві, найчастіше для приготування бетону та влаштування опорного або дренажного шару під конструкціями.
+          </div>
+          <div class="product-card__price">від 250 грн./т</div>
+          <a href="#" class="product-card__detail yellow-btn">Детальніше</a>
+        </div>
+        <div class="product-card">
+          <img class="product-card__img" src="img/granotseva.png" alt="stone">
+          <header class="product-card__title card-title">Гранітний відсів</header>
+          <div class="product-card__description">
+            Гранітний відсів ідеальний наповнювач при виготовленні бетонних сумішей та асфальтобетону. Відсів широко використовується в різних сферах.
+          </div>
+          <div class="product-card__price">від 160 грн./т</div>
+          <a href="#" class="product-card__detail yellow-btn">Детальніше</a>
+        </div>
+      </div>
+    </section>
+    <section class="advantage">
+      <h3 class="section-header">Наші переваги</h3>
+      <div class="advantage-cards wrapper">
+        <div class="advantage-card">
+          <img class="advantage-card__img" src="img/pig.png" alt="">
+          <h4 class="advantage-card__title card-title">Низька ціна</h4>
+          <p class="advantage-card__description">Ми є безпосереднім виробником продукції, тому продаємо її за низькими ринковими цінами.</p>
+        </div>
+        <div class="advantage-card">
+          <img class="advantage-card__img" src="img/car.png" alt="">
+          <h4 class="advantage-card__title card-title">Швидка доставка</h4>
+          <p class="advantage-card__description">Вся продукція та техніка для її доставки завжди є в наявності. Тож відразу навантажуємо і веземо.</p>
+        </div>
+        <div class="advantage-card">
+          <img class="advantage-card__img" src="img/wheelbarrow.png" alt="">
+          <h4 class="advantage-card__title card-title">Індивідуальний підхід</h4>
+          <p class="advantage-card__description">Вам потрібні безперебійні поставки, певний розмір фракції, великі обсяги із знижкою? Звертайтесь, ми запропонуємо рішення</p>
+        </div>
+      </div>
+    </section>
+    <section class="popular-orders">
+      <h3 class="section-header">Типові замовлення</h3>
+      <div class="orders-cards wrapper">
+        <div class="order-card">
+          <img src="img/crushed-stone-1.jpg" class="order-card__img" alt="stone">
+          <span class="order-card__sticer">Акція</span>
+          <p class="order-card__description">Гранітний щебінь 5-20мм</p>
+          <p class="order-card__price order-card__price--action">
+            <span class="order-card__price--old">250 грн/т.</span>
+            <span class=".order-card__price--action">230 грн/т.</span>
+          </p>
+          <a href="#" class="buy-button yellow-btn">Купити</a>
+        </div>
+        <div class="order-card">
+          <img src="img/crushed-stone-2.jpg" class="order-card__img" alt="stone">
+          <span class="order-card__sticer">Акція</span>
+          <p class="order-card__description">Гранітний щебінь 40-60мм</p>
+          <p class="order-card__price order-card__price--action">
+            <span class="order-card__price--old">250 грн/т.</span>
+            <span class=".order-card__price--action">230 грн/т.</span>
+          </p>
+          <a href="#" class="buy-button yellow-btn">Купити</a>
+        </div>
+        <div class="order-card">
+          <img src="img/crushed-stone-3.jpg" class="order-card__img" alt="stone">
+          <!-- <span class="order-card__sticer"></span> -->
+          <p class="order-card__description">Гранітний щебінь 60-80мм</p>
+          <p class="order-card__price">250 грн/т.</p>
+          <a href="#" class="buy-button yellow-btn">Купити</a>
+        </div>
+        <div class="order-card">
+          <img src="img/crushed-stone-4.jpg" class="order-card__img" alt="stone">
+          <!-- <span class="order-card__sticer"></span> -->
+          <p class="order-card__description">Гранітний відсів</p>
+          <p class="order-card__price">160 грн/т.</p>
+          <a href="#" class="buy-button yellow-btn">Купити</a>
+        </div>
+      </div>
+    </section>
+    <section class="our-services" id="our-services">
+      <h3 class="section-header">Наші послуги</h3>
+      <div class="services-cards wrapper">
+        <div class="service-card">
+          <img src="img/truck.png" alt="" class="service-card__img">
+          <div class="service-card__title">Оренда самосвала</div>
+        </div>
+        <div class="service-card">
+          <img src="img/tracktor-1.png" alt="" class="service-card__img">
+          <div class="service-card__title">Оренда екскаватора</div>
+        </div>
+        <div class="service-card">
+          <img src="img/tracktor-2.png" alt="" class="service-card__img">
+          <div class="service-card__title">Оренда спецтехніки</div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us" id="about-us">
+      <h3 class="section-header">про нас</h3>
+      <div class="description wrapper">
+        <h4 class="bold">Ми працюємо на ринку з 2009 року. </h4>
+        <h5>
+          <span class="bold">Повна назва:</span> ОРАТІВСЬКЕ ДОЧІРНЄ ПІДПРИЄМСТВО ПРИВАТНОГО ВИРОБНИЧОГО КОМЕРЦІЙНОГО ПІДПРИЄМСТВА УКРГРАНПОСТАЧ
+        </h5>
+        <h5>
+          <span class="bold">ЄДРПОУ: </span>38269242
+        </h5>
+        <h5>
+          <span class="bold">Вид діяльності: </span>Різання, оброблення та оздоблення декоративного та будівельного каменю
+        </h5>
+        <!-- <h6 class="bold subtitle">Ми у ЗМІ:</h6> -->
+        <!-- <h6 class="bold">Наші фото:</h6> -->
+        <!-- <div class="swiper-container">
+          <div class="photo-slider swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/img_tmp/slider/01.jpg" alt="our photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img_tmp/slider/02.jpg" alt="our photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img_tmp/slider/03.jpg" alt="our photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img_tmp/slider/04.jpg" alt="our photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img_tmp/slider/05.jpg" alt="our photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img_tmp/slider/06.jpg" alt="our photo">
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div> -->
+        <!-- <h6 class="bold">Відео про нас:</h6> -->
+        <!-- <div id="video">
+          <iframe src="https://www.youtube.com/embed/cHZa2Tz7sAk" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+      </div>
+            
+    </section>
+    <section class="contacts" id="contacts">
+      
+      <div class="contacts-wrapper">
+        <div class="contacts-block">
+          <h3 class="section-header">Контакти</h3>
+          <ul class="contacts-list">
+            <li class="contact-element">
+              <img src="img/phone.svg" alt="phone"  class="contact-element__ico">
+              <ul class="contact-element__content">
+                <li class="phone-number">
+                  <a href="tel:+380980467932">8 098 046-79-32</a>
+                </li>
+                <li class="phone-number">
+                  <a href="tel:+80971557635">8 097 155-76-35</a>
+                </li>
+              </ul>
+            </li>
+            <li class="contact-element">
+              <img src="img/gps.svg" alt="adres"  class="contact-element__ico">
+              <address class="address contact-element__content">Вінницька обл., с. Якимівка, вул. Театральна 68А</address>  
+              <!-- <div class="address contact-element__content">Вінницька обл., с.Якимівка, вул. Театральна 68А</div> -->
+            </li>
+            <li class="contact-element">
+              <img src="img/mail.svg" alt="mail"  class="contact-element__ico">
+              <a href="#" class="email contact-element__content">or-ukrgranpostach@ukr.net</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560569.8747826959!2d30.122296259566724!3d49.256728948299305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d2c359f9c12e5d%3A0xe197f54838495541!2sStarozhyvotivs%CA%B9kyy%20Hranitnyy%20Kar&#39;yer%20%22Ukrpostach%22!5e0!3m2!1sru!2sua!4v1585274396278!5m2!1sru!2sua"
+          width="100%" height="520"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
+    </section>
+    
+  </main>
+  <footer>
+    <div class="footer-content wrapper">
+      <div class="logo">
+        <img src="img/stone-logo-white.svg" alt="logo" class="logo__img">
+        <div class="logo__text">
+          <h1 class="logo__name logo__name--footer">ДП ПВКП «УкрГранПостач»</h1>
+          <h2 class="logo__slogan logo__slogan--footer">Добування декоративного та будівельного каменю</h2>
+        </div>
+      </div>
+      <div class="contact__phone">8 097 157-56-72<span class="header__working-times">Пн - Пт з 9:00 до 18:00</span></div>
+      <button class="call-back-btn call-back-btn--footer">Зворотний дзвінок</button>
+      
+    </div>
+  </footer>
+
+<!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+<!-- <script src="js/swiper.min.js"></script>
+<script src="js/script.js"></script> -->
+<script src="js/callbackform.js"></script>
+</body>
+</html>

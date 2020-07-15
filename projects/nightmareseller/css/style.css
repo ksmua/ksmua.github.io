@@ -344,7 +344,7 @@ h4
 	color:rgba(255,255,255,0.7)
 }
 
-.video video
+.video iframe
 {
 	width:90%;
 	border:1px solid #a9a9a9;
@@ -739,4 +739,15 @@ footer
 	{
 		width:45%
 	}
+
+	.video iframe:first-child
+	{
+		margin-right: 10px;
+	}
+
+	.video iframe:last-child
+	{
+		margin-left: 10px;
+	}
+
 }

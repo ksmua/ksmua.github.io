@@ -8,15 +8,16 @@
         <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </head>
     <body>
         <header id="header">
         <nav id="nav-bar">
             <div class="nav wrapper">
                 <div class="logo">
-                    <img src="/projects/nightmareseller/img/logo.svg" alt="logotype" id="header-img">
+                    <img src="img/logo.svg" alt="logotype" id="header-img">
                     <h1>
                         <span class="logo-str">night<span class="logo-red">mare</span></span>
                         <span class="logo-str">seller</span>
@@ -25,8 +26,8 @@
                 <div class="menu-bar">
                     <input type="checkbox" id="menu-checkbox">
                     <label for="menu-checkbox">
-                        <img src="/projects/nightmareseller/img/hamburger_closed.svg" alt="menu" class="menu-checkbox" id="closed">
-                        <img src="/projects/nightmareseller/img/hamburger_opened.svg" alt="menu" class="menu-checkbox" id="opened">
+                        <img src="/img/hamburger_closed.svg" alt="menu" class="menu-checkbox" id="closed">
+                        <img src="/img/hamburger_opened.svg" alt="menu" class="menu-checkbox" id="opened">
                     </label>
                     <ul class="menu">
                         <li><a class="nav-link" href="#intro">Intro</a></li>
@@ -42,7 +43,7 @@
         </header>
     <main>
         <section class="sad wrapper" id="intro">
-            <img src="/projects/nightmareseller/img/empty.jpg" alt="empty">
+            <img src="/img/empty.jpg" alt="empty">
             <ul class="list list--right">
                 <li>Do you and your friends live measured and comfortable life?</li>
                 <li>Are your days the same?</li>
@@ -57,7 +58,7 @@
                     <li>Do you remember the film "The Game" directed by David Fincher, starring
                         Michael Douglas?</li>
                 </ul>
-                <img src="/projects/nightmareseller/img/creepy-smile.png" alt="monkey">
+                <img src="/img/creepy-smile.png" alt="monkey">
             </div>
         </section>    
         <section class="about-us wrapper" id="about_us">
@@ -83,31 +84,31 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/projects/nightmareseller/img/slider/car-gas_masks.jpg" alt="abduction">
+                            <img src="/img/slider/car-gas_masks.jpg" alt="abduction">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/projects/nightmareseller/img/slider/abduction.jpg" alt="abduction">
+                            <img src="/img/slider/abduction.jpg" alt="abduction">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/projects/nightmareseller/img/slider/gong_chair.jpg" alt="abduction">
+                            <img src="/img/slider/gong_chair.jpg" alt="abduction">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/projects/nightmareseller/img/slider/in_the_mudy.jpg" alt="abduction">
+                            <img src="/img/slider/in_the_mudy.jpg" alt="abduction">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/projects/nightmareseller/img/slider/bandito.jpg" alt="abduction">
+                            <img src="/img/slider/bandito.jpg" alt="abduction">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/projects/nightmareseller/img/slider/snowman.jpg" alt="abduction">
+                            <img src="/img/slider/snowman.jpg" alt="abduction">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/projects/nightmareseller/img/slider/women_in_bag.jpg" alt="abduction">
+                            <img src="/img/slider/women_in_bag.jpg" alt="abduction">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/projects/nightmareseller/img/slider/it.jpg" alt="abduction">
+                            <img src="/img/slider/it.jpg" alt="abduction">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/projects/nightmareseller/img/slider/monkey.jpg" alt="abduction">
+                            <img src="/img/slider/monkey.jpg" alt="abduction">
                         </div>
                     </div>
                         <div class="swiper-button-prev"></div>
@@ -192,21 +193,9 @@
             <div class="wrapper">
                 <h4>We can do something like that</h4>
                 <div class="video">
-                  <iframe id="video" 
-                    width="560" height="415"
-                    src="https://www.youtube.com/embed/CJnoVLIaKHk"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen="">
-                  </iframe>
-                  <h5 class="subhead">and</h5>
-                  <iframe id="video2"
-                    width="560" height="415"
-                    src="https://www.youtube.com/embed/w1_TYZxe224"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen="">
-                  </iframe>
+                    <video id="video" src="/video/witch_fly.mp4" controls muted></video>
+                    <h5 class="subhead">and</h5>
+                    <video id="video2" src="/video/zombies.mp4" controls muted></video>
                 </div>
             </div> 
         </section>
@@ -215,7 +204,7 @@
                 <h4>Are you interested?</h4>
                 <h5 class="subhead">So, live your contacts and your ideas, and we will contact you.</h5>
                 <div class="communication">
-                    <img src="/projects/nightmareseller/img/dark_cat.jpg" alt="cat">
+                    <img src="/img/dark_cat.jpg" alt="cat">
                     <form action="https://www.freecodecamp.com/email-submit" id="form" enctype="text/plain">
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" required="">
@@ -239,19 +228,19 @@
         <div class="footer wrapper">
             <div class="contacts">
                 <ul class="contact-list">
-                    <li><img src="/projects/nightmareseller/img/geo.svg" alt="geo"><span>Ukraine, Zmerinka, Station 2/3</span></li>
-                    <li><img src="/projects/nightmareseller/img/phone.svg" alt="phone"><span>455-554-44-55</span></li>
-                    <li><img src="/projects/nightmareseller/img/email.svg" alt=""><span>nigtmaresell@boo.com</span></li>
+                    <li><img src="/img/geo.svg" alt="geo"><span>Ukraine, Zmerinka, Station 2/3</span></li>
+                    <li><img src="/img/phone.svg" alt="phone"><span>455-554-44-55</span></li>
+                    <li><img src="/img/email.svg" alt=""><span>nigtmaresell@boo.com</span></li>
                 </ul>
             </div>
             <ul class="socials">
-                <li><a href="#"><img src="/projects/nightmareseller/img/fb.svg" alt=""></a></li>
-                <li><a href="#"><img src="/projects/nightmareseller/img/in.svg" alt=""></a></li>
-                <li><a href="#"><img src="/projects/nightmareseller/img/tw.svg" alt=""></a></li>
+                <li><a href="#"><img src="/img/fb.svg" alt=""></a></li>
+                <li><a href="#"><img src="/img/in.svg" alt=""></a></li>
+                <li><a href="#"><img src="/img/tw.svg" alt=""></a></li>
             </ul>
         </div>
     </footer>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
@@ -265,6 +254,5 @@
             },
         })
     </script>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>

@@ -112,7 +112,8 @@ nav
 .menu a:hover,.menu a:active
 {
 	color:#be0000;
-	transition:.5s
+	transition:.5s;
+	transform: scale(1.1);
 }
 
 .menu-checkbox
@@ -211,7 +212,7 @@ h2
 .about-us
 {
 	margin-top:30px;
-	padding:15px;
+	padding:50px 15px 30px;
 	background-color:#141414
 }
 
@@ -219,8 +220,10 @@ h2
 {
 	font-family:'Play',sans-serif;
 	font-size:20px;
-	padding-bottom:15px;
-	text-indent:20px
+	padding: 25px 15px;
+	text-indent:20px;
+	text-align: justify;
+	letter-spacing: 2px;
 }
 
 .swiper-container
@@ -324,7 +327,13 @@ h4
 	padding:30px;
 	margin-top:30px;
 	background-color:#000;
-	display:block
+	display:block;
+	letter-spacing: 1px;
+}
+
+.reviews p:last-child
+{
+	width: 90%;
 }
 
 .dark-wall
@@ -335,7 +344,7 @@ h4
 	color:rgba(255,255,255,0.7)
 }
 
-.video iframe
+.video video
 {
 	width:90%;
 	border:1px solid #a9a9a9;
@@ -650,7 +659,7 @@ footer
 		width:45%
 	}
 	
-	.video iframe
+	.video video
 	{
 		width:70%
 	}
@@ -690,7 +699,7 @@ footer
 		width:45%
 	}
 	
-	.video iframe
+	.video video
 	{
 		width:60%
 	}
@@ -699,13 +708,13 @@ footer
 	{
 		display:flex;
 		flex-direction:row;
-		margin-left:-30px
+		/* margin-left:-30px */
 	}
 	
-	.about-us .container p
+	/* .about-us .container p
 	{
 		padding-left:30px
-	}
+	} */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -726,7 +735,7 @@ footer
 		flex-direction:row
 	}
 	
-	.video iframe
+	.video video
 	{
 		width:45%
 	}

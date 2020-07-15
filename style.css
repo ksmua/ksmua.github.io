@@ -20,6 +20,7 @@ ul li {
 
 #welcome-section {
   height: 100vh;
+  background-color: #111111;
   background-image: url(/img/bg.jpg);
 }
 .wrapper {

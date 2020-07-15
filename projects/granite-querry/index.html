@@ -48,7 +48,14 @@
       </ul>
     </nav>
     <section class="banner">
-      <img src="img/product.jpg" alt="background" id="banner__background">
+      <!-- <img src="img/product.jpg" alt="background" id="banner__background"> -->
+      <img src="img/product_1170px.jpg" 
+           sizes="100vw"
+           srcset="img/product_768px.jpg 768w,
+                   img/product_1024px.jpg 1024w,
+                   img/product_1170px.jpg 1280w" 
+           id="banner__background" alt="background">
+
       <div class="banner__text">
         <h2 class="banner__title">камінь, щебінь, відсів</h2>
         <h3 class="banner__subtitle">
@@ -67,7 +74,11 @@
       <h3 class="section-header">завжди в наявності</h3>
       <div class="products-cards wrapper">
         <div class="product-card">
-          <img class="product-card__img" src="img/stones.webp" alt="stone">
+          <!-- <img class="product-card__img" src="img/stones.webp" alt="stone"> -->
+          <picture>
+            <source srcset="img/stones.webp" type="image/webp">
+            <img class="product-card__img" src="img/stones.png" alt="stones">
+          </picture>
           <header class="product-card__title card-title">Камінь бутовий</header>
           <div class="product-card__description">
             Відбірний бутовий камінь найчастіше використовується для влаштування фундаментів та камінних огорож, а також у ландшафтному дизайні.
@@ -76,7 +87,11 @@
           <a href="#" class="product-card__detail yellow-btn">Детальніше</a>
         </div>
         <div class="product-card">
-          <img class="product-card__img" src="img/scheben.webp" alt="stone">
+          <!-- <img class="product-card__img" src="img/scheben.webp" alt="stone"> -->
+          <picture>
+            <source srcset="img/scheben.webp" type="image/webp">
+            <img class="product-card__img" src="img/stones.png" alt="stones">
+          </picture>
           <header class="product-card__title card-title">Щебінь гранітний</header>
           <div class="product-card__description">
             Гранітний щебінь широко використовується в будівництві, найчастіше для приготування бетону та влаштування опорного або дренажного шару під конструкціями.
@@ -85,7 +100,11 @@
           <a href="#" class="product-card__detail yellow-btn">Детальніше</a>
         </div>
         <div class="product-card">
-          <img class="product-card__img" src="img/granotseva.webp" alt="stone">
+          <!-- <img class="product-card__img" src="img/granotseva.webp" alt="stone"> -->
+          <picture>
+            <source srcset="img/granotseva.webp" type="image/webp">
+            <img class="product-card__img" src="img/granotseva.png" alt="stones">
+          </picture>
           <header class="product-card__title card-title">Гранітний відсів</header>
           <div class="product-card__description">
             Гранітний відсів ідеальний наповнювач при виготовленні бетонних сумішей та асфальтобетону. Відсів широко використовується в різних сферах.
@@ -119,7 +138,7 @@
       <h3 class="section-header">Типові замовлення</h3>
       <div class="orders-cards wrapper">
         <div class="order-card">
-          <img src="img/crushed-stone-1.jpg" class="order-card__img" alt="stone">
+          <img src="img/crushed-stone-1.jpg" class="order-card__img" alt="crushed-stones">
           <span class="order-card__sticer">Акція</span>
           <p class="order-card__description">Гранітний щебінь 5-20мм</p>
           <p class="order-card__price order-card__price--action">
@@ -129,7 +148,7 @@
           <a href="#" class="buy-button yellow-btn">Купити</a>
         </div>
         <div class="order-card">
-          <img src="img/crushed-stone-2.jpg" class="order-card__img" alt="stone">
+          <img src="img/crushed-stone-2.jpg" class="order-card__img" alt="crushed-stones">
           <span class="order-card__sticer">Акція</span>
           <p class="order-card__description">Гранітний щебінь 40-60мм</p>
           <p class="order-card__price order-card__price--action">
@@ -139,14 +158,14 @@
           <a href="#" class="buy-button yellow-btn">Купити</a>
         </div>
         <div class="order-card">
-          <img src="img/crushed-stone-3.jpg" class="order-card__img" alt="stone">
+          <img src="img/crushed-stone-3.jpg" class="order-card__img" alt="crushed-stones">
           <!-- <span class="order-card__sticer"></span> -->
           <p class="order-card__description">Гранітний щебінь 60-80мм</p>
           <p class="order-card__price">250 грн/т.</p>
           <a href="#" class="buy-button yellow-btn">Купити</a>
         </div>
         <div class="order-card">
-          <img src="img/crushed-stone-4.jpg" class="order-card__img" alt="stone">
+          <img src="img/crushed-stone-4.jpg" class="order-card__img" alt="crushed-stones">
           <!-- <span class="order-card__sticer"></span> -->
           <p class="order-card__description">Гранітний відсів</p>
           <p class="order-card__price">160 грн/т.</p>

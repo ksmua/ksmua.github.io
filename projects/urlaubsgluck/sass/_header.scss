@@ -1,0 +1,260 @@
+.header {
+    display: flex;
+    height: 540px;
+    // width: 320px;
+    color: white;
+    font-family: 'Montserrat-Bold';
+    background-image: url("../img/header-bkg-768.jpg");
+    background-position: center center;
+    background-size: cover;
+    // position: relative;
+    margin: 0 auto;
+    //* on DESCTOP *
+    //height: 700px;
+    
+    section {
+        justify-content: center;
+    }
+    
+    h1 { 
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: bottom;
+        padding-top: 20px;
+        // border: 1px solid yellow;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0;
+        //* for DESCTOP *
+        //font-size: 52px;
+        //line-height: 67px;
+    }
+    
+    h2 {
+        font-family: "Roboto-Light";
+        font-size: 18px;
+        line-height: 21px;
+        width: 220px;
+        margin: 0 auto;
+        padding-top: 12px;
+        text-align: center;
+        // border: 1px solid green;
+        padding-bottom: 18px;
+    }
+    
+    
+}
+.red-button {
+    display: block;
+    background-color: $tomato-color;
+    border: none;
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    margin: 0 auto;
+    &:hover {
+        border: 2px solid white;
+    }
+}
+
+.header-top {
+    margin-top: 20px;
+    // border: 1px solid red;
+    //* on DESCTOP *
+    //display: flex;
+    //flex-direction: row-reverse;
+    //justify-content: space-between;
+    //align-items: center;
+}
+
+.header-buttons {
+    font-size: 14px;
+    // border: 1px solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.button-transparent {
+    display: block;
+    margin: 5px auto 0;
+    height: 40px;
+    width: 280px;
+    border: 2px solid $tomato-color;
+    border-radius: 20px;
+    background-color: transparent;
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    color: $tomato-color;
+    &:hover {
+        background-color: #ff4e50;
+        border-color: #ff4e50;;
+        color: white;
+    }
+}
+
+.input-field {
+    height: 40px;
+	width: 280px;
+	color: $grey-ground;
+	border: 1px solid $grey-ground;
+	border-radius: 5px;
+	font-family: "Roboto-Light";
+    font-size: 14px;
+    text-indent: 10px;
+	display: block;
+	background-color: inherit;
+    outline: none;
+}
+
+#login-form {
+    position: absolute;
+    right: 0;
+    width: 320px;
+    height: 240px;
+    background-color: white;
+    padding-top: 20px;
+    border-radius: 10px;
+    color: #333333;
+
+    input {
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        // background-color: rgb(240, 190, 190);
+    }
+    
+    label {
+        padding-left: 25px;
+        margin-bottom: 5px;
+    }
+    
+    #login-submit {
+        margin-top:25px;
+    }
+    
+    #login-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70px;
+        height: 20px;
+        // border: 1px solid #ff4e50;
+        border-radius: 10px;
+        background-color: #e2e2e2;
+        font-family: "Montserrat-Regular";
+        font-size: 10px;
+        // color: #ff4e50;
+        color: #333333;
+        line-height: 22px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        &:hover{
+            background-color: #ff4e50;
+            color: white;
+        }
+    }
+}
+
+
+.logo {
+	padding-top: 120px;
+    text-transform: uppercase;
+	font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    // a {
+    //     border: 1px solid blue;
+    // }
+}
+
+.in-button {
+    height: 36px;
+    width: 90px;
+    border: 2px solid transparent;
+    border-radius: 18px ;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    
+    &:hover {
+        background-color: $tomato-color;
+        border-color: white;
+    }
+}
+
+.sig-up {
+    border: 2px solid white;
+}
+
+//*************** max size of screen - 320px *****************
+//***************         min > 320px        *****************
+@media screen and (max-width: 320px) {
+//* on VERY SMALL MOBILE *    
+}
+
+//************************************************************
+//***************      320px > 767px        ******************
+//***************      mobile styles       *******************
+@media screen and (min-width: 320px) {
+//* on MOBILE *    
+//   .header {
+//     background-color: black;
+//     background-image: url("../img/header-bkg-768.jpg");
+//     background-position: bottom;// background-size: cover;
+//     width: 100%;
+//     height: 700px;
+//     h1 { 
+//         padding-top: 150px;
+//         border: 1px solid yellow;
+//         font-size: 52px;
+//         line-height: 67px;
+//         // margin: 0 0 10px 0;
+//     }
+//   }
+}
+
+//*************** min size of screen - 768px *****************
+//***************      768px > 1439px        *****************
+//***************       tablet styles        *****************
+@media screen and (min-width: 768px) {
+//* on TABLET *
+  .header {
+      background-image: url("../img/header-bkg-1440.jpg");
+      h2 {
+          width: 100%;
+          padding-top: 40px;
+          font-size: 24px;
+      }
+  }
+  .header-top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 668px;
+    margin: 20px auto 0;
+  }  
+  .logo {
+      padding-top: 0px;
+  }
+}
+
+//*************** min size of screen - 1440px ****************
+//***************        1440px > max         ****************
+//***************       desctop styles        ****************
+@media screen and (min-width: 1440px) {
+//* on DESCTOP *
+//   body {
+//     background-color: red;
+//   }
+  .header-top{
+      width: 940px;
+  }
+}

@@ -1,0 +1,97 @@
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+}
+
+body {
+	background-color: white;
+}
+button {
+	overflow: hidden;
+	background: none; // убираем фон
+	border: none; // убирает бордер
+	box-shadow: none; // убираем тень, если есть
+}
+button:hover {
+	cursor: pointer;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+.container {
+	width: 320px;
+	// max-width: 940px;
+	margin: 0 auto;
+}
+
+.unvisible {
+	display: none;
+}
+
+//*************** max size of screen - 320px *****************
+//***************         min > 320px        *****************
+@media screen and (max-width: 320px) {
+  // body {
+  //   background-color: blue;
+  // }
+}
+
+//************************************************************
+//***************      320px > 767px        ******************
+//***************      mobile styles       *******************
+@media screen and (min-width: 320px) {
+  // body {
+  //   background-color: tomato;
+	// }
+	// .container {
+	// 	width: 100%;
+	// 	max-width: 767px;
+	// 	// max-width: 940px;
+	// 	// margin: 0 auto;
+	// }
+}
+
+//*************** min size of screen - 768px *****************
+//***************      768px > 1439px        *****************
+@media screen and (min-width: 768px) {
+	// body {
+  //   background-color: green;
+	// }
+	.container {
+		width: 100%;
+		max-width: 748px;
+	}
+}
+
+//*************** min size of screen - 1440px ****************
+//***************        1440px > max         ****************
+@media screen and (min-width: 1440px) {
+  // body {
+  //   background-color: red;
+	// }
+	.container {
+		width: 100%;
+		max-width: 940px;
+	}
+}
+
+
+@import "fonts";
+@import "color";
+@import "normalize";
+@import "header";
+@import "main";
+@import "footer";

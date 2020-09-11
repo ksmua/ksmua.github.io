@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>URLAUBSGLÜCK</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <section class="container">
+      <div class="header-top">
+        <div class="header-buttons">
+          <form action="#" id="login-form" class="unvisible">
+            <button id="login-close">close</button>
+            <label for="login-name">Name</label>
+            <input id="login-name" class="input-field" type="text">
+            <label for="login-password">Password</label>
+            <input id="login-password" class="input-field" type="password">
+            <button id="login-submit"class="button-transparent">Submit</button>
+          </form>
+          <button id="login-button" class="in-button">Log in</button>
+          <button class="in-button sig-up">Sig up</button>
+        </div>
+        <div class="logo">
+          <a href="#">urlaubsglück</a>
+        </div>
+      </div>
+      <h1>share your<br>holiday dreams</h1>
+      <h2>And find the perfect partner to fulfill it</h2>
+      <button class="red-button">Find your holiday partner</button>
+    </section>
+  </header>
+  <main>
+    <section class="step-card-section">
+      <h3 class="container">How Urlaubsglück works?</h3>
+      <div class="step-cards container">
+        <div class="step-card step-card--1">
+          <div class="step-card__stiker">step 1</div>
+          <h4 class="step-card__header">Sed leo enim, condimentum</h4>
+          <p class="step-card__description">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a
+            leo sit amet facilisis.</p>
+        </div>
+        <div class="step-card step-card--2">
+          <div class="step-card__stiker">step 2</div>
+          <h4 class="step-card__header">Morbi velit risus</h4>
+          <p class="step-card__description">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor
+            est.</p>
+        </div>
+        <div class="step-card step-card--3">
+          <div class="step-card__stiker">step 3</div>
+          <h4 class="step-card__header">Sed leo enim, condimentum</h4>
+          <p class="step-card__description">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a
+            leo sit amet facilisis.</p>
+        </div>
+      </div>
+    </section><!-- /step-card-section -->
+    <section class="partner-card-section">
+      <h3 class="container">Meet a partner for your best holiday</h3>
+      <div id="partner-cards">
+              <div class="partner-card">
+                <div class="partner-card__img">
+                  <img src="/img/partners/Bradley_Hunter.jpg" alt="partner-photo">
+                  <div class="partner-card__stiker"><img src="/img/partners/stiker-tv.png" alt="tv"></div>
+                </div>
+                <h4 class="partner-card__name">Bradley Hunter</h4>
+                <p class="partner-card__about">Based in Chicago. I love playing tennis and loud music.</p>
+              </div>
+              <div class="partner-card">
+                <div class="partner-card__img">
+                  <img src="/img/partners/Lucas_Marsha.jpg" alt="partner-photo">
+                  <div class="partner-card__stiker"><img src="/img/partners/stiker-flask.png" alt="tv"></div>
+                </div>
+                <h4 class="partner-card__name">Lucas Marsha</h4>
+                <p class="partner-card__about">I get my inspiration from nature and objects around me. I have a passion to colours,
+                  typography and skateboards.</p>
+              </div>
+              <div class="partner-card">
+                <div class="partner-card__img">
+                  <img src="/img/partners/Heather_Walker.jpg" alt="partner-photo">
+                  <div class="partner-card__stiker"><img src="/img/partners/stiker-cup.png" alt="tv"></div>
+                </div>
+                <h4 class="partner-card__name">Heather Walker</h4>
+                <p class="partner-card__about">I'm a happy person that loves cats and climbing on mountains</p>
+              </div>
+              <div class="partner-card">
+                <div class="partner-card__img">
+                  <img src="/img/partners/Bradley_Hunter_2.jpg" alt="partner-photo">
+                  <div class="partner-card__stiker"><img src="/img/partners/stiker-paper-airplane.png" alt="tv"></div>
+                </div>
+                <h4 class="partner-card__name">Bradley Hunter</h4>
+                <p class="partner-card__about">Based in Chicago. I love playing tennis and loud music.</p>
+              </div>
+      </div>
+      <button class="button-transparent" id="see-other-partners">See other partners</button>
+    </section>
+    <!-- /partner-card-section -->
+    <section class="ideas-section">
+      <h3 class="container">Discover holiday activity ideas</h3>
+      <div class="ideas-cards">
+        <div class="grid-sizer"></div>
+        <div class="ideas-card sport-and-activity">
+          <h4>Sport and Activity</h4>
+        </div>
+        <div class="ideas-card willnes-and-health">
+          <h4>Wellnes and Health</h4>
+        </div>
+        <div class="ideas-card extreme-sports-and-expeditions">
+          <h4>Extreme Sports
+            and Expeditions</h4>
+        </div>
+        <div class="ideas-card games">
+          <h4>Games</h4>
+        </div>
+        <div class="ideas-card ideas-card-width-2x culture-and-education">
+          <h4>Culture and Education</h4>
+        </div>
+        <div class="ideas-card ideas-card-width-2x relaxation">
+          <h4>Relaxation</h4>
+        </div>
+        <div class="ideas-card traveling">
+          <h4>Traveling</h4>
+        </div>
+      </div>
+      <form action="#" class="search-partners">
+        <h3 class="container">Discover holiday activity ideas</h3>
+        <p>Hi! What are your holiday interests?</p>
+        <input id="input-search-partners" class="input-field" "type="text" placeholder="Enter your interests">
+        <button id="btn-search-partners" class="red-button">Search partners</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <h2 class="footer-logo">urlaubsglück</h2>
+    <h5>Company</h5>
+    <nav class="container">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <h5>Partners</h5>
+    <div class="designer">
+      <span>designed by</span>
+      <a href="#"><img src="/img/designer-logo.png" alt="designer-logo"></a>
+    </div>
+  </footer>
+  <script src="./js/bundle.js"></script>
+</body>
+
+</html>

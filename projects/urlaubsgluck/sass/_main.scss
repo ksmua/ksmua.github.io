@@ -1,0 +1,400 @@
+//*************************************************************************************** 
+//******************************** MAIN SECTION *****************************************
+//*************************************************************************************** 
+main {
+	h3 {
+		font-family: "Montserrat-Bold";
+		font-size: 21px;
+		line-height: 21px;
+		color: $grey-dark;
+		text-align: center;
+		// border: 1px solid blue;
+		padding: 0 10px;
+	}
+}
+
+.step-card-section{
+	padding: 40px 10px 0; 
+	// border: 1px dashed grey;
+}
+
+.step-cards{
+	padding-top: 36px;
+}
+.step-card {
+	position: relative;
+	width: 300px;
+	height: 240px;
+	margin: 0 auto;
+	// bordestatusr: 1px solid red;
+	border-radius: 5px;
+	padding: 20px;
+	display: flex;
+	// flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	// align-items: center;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+
+	.step-card__stiker {
+		// margin-top: 50px;
+		width: 70px;
+		height: 20px;
+		border-radius: 10px;
+		background-color: $tomato-color;
+		font-family: "Montserrat-Regular";
+		font-size: 10px;
+		color: white;
+		line-height: 22px;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		text-align: center;
+		z-index: 1;
+		// vertical-align: middle;
+	}
+}
+.step-card::before {
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+		content: "";
+		position: absolute;
+		display: block;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+}
+
+.step-card--1 {
+	background-image: url("../img/step-card-1-bkg.jpg");
+}
+.step-card--2 {
+	background-image: url("../img/step-card-2-bkg.jpg");
+}
+.step-card--3 {
+	background-image: url("../img/step-card-3-bkg.jpg");
+}
+
+.step-card__header {
+	display: block;
+	max-height: 25%;
+	width: 100%;
+	margin-top: 18px;
+	color: white;
+	font-family: "Montserrat-Bold";
+	font-size: 20px;
+	line-height: 24px;
+	// border: 1px solid red;
+	z-index: 1;
+}
+
+.step-card__description {
+	margin-top: 12px;
+	max-height: 50%;
+	font-size: 14px;
+	font-family: "Roboto-Light";
+	color: $grey-light;
+	// border: 1px solid yellow;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+.partner-card-section {
+	padding: 45px 0 38px 0;
+	// border: 1px dashed green;
+
+
+}
+
+.partner-card {
+	padding: 25px 0;
+	position: relative;
+	text-align: center;
+
+	.partner-card__img {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 122px;
+		height: 122px;
+	
+		img {
+			border-radius: 50%;
+		}
+	}
+	
+	.partner-card__stiker{
+			position: absolute;
+			right: -5px;
+			bottom: -5px;
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+	}	
+	
+	.partner-card__name{
+		font-family: "Montserrat-Bold";
+		font-size: 14px;
+		line-height: 14px;
+		text-align: center;
+		margin-top: 22px;
+	}
+
+	.partner-card__about{
+		display: block;
+		width: 220px;
+		margin: 17px auto 0;
+		font-family: "Roboto-Light";
+		font-size: 14px;
+		color: $grey-normal;
+	}
+
+} //partner-card end 
+
+
+.ideas-section {
+	// border: 1px solid violet;
+	padding: 38px 0 40px;
+
+	h4 {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: "Montserrat-Bold";
+		font-size: 22px;
+		color: white;
+		text-align: center;
+		// max-width: 100%;
+		// line-height: 100%;
+	}
+}
+.ideas-cards {
+	width: 96%;	
+	margin: 0 auto 40px;
+	// display: flex;
+	// justify-content: center;
+}
+.ideas-card {
+	position: relative;
+	height: 200px;
+	margin: 10px auto;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 5px;
+
+	
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+//====NEW CARDS========
+.ideas-card img {
+	width: 170%;
+	height: 100%;
+	// border-radius: 5px;
+	position: absolute;
+	left: -50%;
+}
+
+.ideas-card-width-2x img{
+		width: 200%;
+		height: 200%;
+	}
+	
+.grid-sizer {
+	width: 96%;
+}
+
+.ideas-card-width-2x {
+	width: 100%;
+}
+	.sport-and-activity,
+	.willnes-and-health,
+	.extreme-sports-and-expeditions,
+	.games,
+	.culture-and-education,
+	.relaxation,
+	.traveling {
+		border-radius: 5px;
+		background-repeat: no-repeat;
+		// background-position: center;
+		background-size: cover;
+	}
+
+	.sport-and-activity {
+		background-image: url("../img/ideas/sport_and_activity.jpg");
+	}
+	.willnes-and-health {
+		background-image: url("../img/ideas/wellnes_and_health.jpg");
+	}
+	.extreme-sports-and-expeditions {
+		background-image: url("../img/ideas/extreme_sports_and_expeditions.jpg");
+	}
+	.games {
+		background-image: url("../img/ideas/games.jpg");
+	}
+	.culture-and-education {
+		background-image: url("../img/ideas/culture_and_education.jpg");
+	}
+	.relaxation {
+		background-image: url("../img/ideas/relaxation.jpg");
+	}
+	.traveling {
+		background-image: url("../img/ideas/traveling.jpg");
+	}
+
+	// ***************** Serch FORM ***********************
+	.search-partners {
+		padding: 8px 0;
+		
+		p {
+			text-align: center;
+			font-family: "Roboto-Light";
+			font-size: 18px;
+			line-height: 18px;
+			color: $grey-dark;
+			padding: 20px 0 16px;
+		}
+		.input-field {
+			margin: 0 auto 10px;
+			padding: 0 5px 0 16px;
+		}
+	}
+
+// #container2 {
+// 	width: 96%;
+// 	max-width: 950px;
+// }
+// .card {
+// 	width: 400px;
+// 	height: 300px;
+// }
+
+
+
+
+
+
+
+
+//*************** max size of screen - 320px *****************
+//***************         min > 320px        *****************
+// @media screen and (max-width: 320px) {
+//   body {
+//     background-color: blue;
+//   }
+// }
+
+//************************************************************
+//***************      320px > 767px        ******************
+//***************      mobile styles       *******************
+// @media screen and (min-width: 320px) {
+//   body {
+//     background-color: tomato;
+// 	}
+// }
+
+//*************** min size of screen - 600px *****************
+//***************      600px > 1439px        *****************
+@media screen and (min-width: 600px) {
+	#partner-cards{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 480px;
+		margin: 0 auto;
+	}
+	.partner-card{
+		max-width:200px;
+		margin: 0 20px;
+	}
+	
+}
+//*************** min size of screen - 768px *****************
+//***************      768px > 1439px        *****************
+@media screen and (min-width: 768px) {
+  // body {
+  //   background-color: green;
+	// }
+
+	.step-card-section {
+		padding-top: 100px;
+		}
+	.step-cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.step-card{
+		width: 235px;
+		height: 400px;
+	}
+	
+	.step-card--1 {
+		background-image: url("../img/step-card-1-bkg-tablet.jpg");
+		background-position-x: -225px;
+		background-position-y: -25px;
+	}
+	.step-card--2 {
+		background-image: url("../img/step-card-2-bkg-tablet.jpg");
+		background-position-x: -186px;
+		background-position-y: -21px;
+	}
+	.step-card--3 {
+		background-image: url("../img/step-card-3-bkg-tablet.jpg");
+		background-position-x: -205px;
+		background-position-y: -22px;
+	}
+
+	.ideas-cards{
+		max-width: 750px;
+	}
+	.grid-sizer {
+		width: 31%;
+	}
+	.ideas-card {
+		width: 31%;
+		height: 310px;
+	}
+	.ideas-card-width-2x {
+		width: 65%;
+	}
+
+	
+}
+
+//*************** min size of screen - 1440px ****************
+//***************        1440px > max         ****************
+@media screen and (min-width: 1440px) {
+  // body {
+  //   background-color: red;
+	// }
+	.step-card {
+		width: 300px;
+	}
+	.step-card--1 {
+		background-position-x: -192px;
+		background-position-y: -18px;
+	}
+	.step-card--2 {
+		background-position-x: -160px;
+		background-position-y: -22px;
+	}
+	.step-card--3 {
+		background-position-x: -196px;
+		background-position-y: -30px;
+	}
+	.ideas-card-width-2x {
+		width: 64%;
+	}
+	.ideas-cards, #partner-cards{
+		max-width: 940px;
+		// max-width: 1200px;
+	}
+	.partner-card{
+		width:20%;
+	}
+}

@@ -1,0 +1,53 @@
+// @font-face {
+//   font-family: FontName;
+//   src: url('path/filename.eot');
+//   src: url('path/filename.eot?#iefix') format('embedded-opentype'),
+//  url('path/filename.woff2') format('woff2'), 
+//  url('path/filename.woff') format('woff'),
+//  url('path/filename.ttf') format('truetype');
+// }
+
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/montserrat/Montserrat-Bold.eot');
+    src: url('../fonts/montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/montserrat/Montserrat-Bold.woff') format('woff'),
+         url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/montserrat/Montserrat-Regular.eot');
+    src: url('../fonts/montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'), 
+         url('../fonts/montserrat/Montserrat-Regular.woff') format('woff'),
+         url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/roboto/Roboto-Light.eot');
+    src: url('../fonts/roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto/Roboto-Light.woff2') format('woff2'),
+         url('../fonts/roboto/Roboto-Light.woff') format('woff'),
+         url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// ************************* Interval betvin symbols  ****************
+// p {
+//   *** turn on ***
+//    font-feature-settings: "kern" 1;
+//   *** set param ***
+//     font-kerning: normal;
+//         -webkit-font-feature-settings: "kern" 1;
+//         -moz-font-feature-settings: "kern" 1;
+// }
